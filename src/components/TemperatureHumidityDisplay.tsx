@@ -27,8 +27,8 @@ const TemperatureHumidityDisplay: React.FC = () => {
       <h2>Dados de Temperatura e Umidade</h2>
       {temperature !== null && humidity !== null ? (
         <div>
-          <p>Temperatura: {temperature} °C</p>
-          <p>Umidade: {humidity} %</p>
+          <p>Temperatura: <span>{temperature} °C 🌡️</span></p>
+          <p>Umidade: <span>{humidity} % 💦</span></p>
         </div>
       ) : (
         <p>Carregando...</p>
